@@ -43,3 +43,8 @@ parse_urls
 - ``query``GET请求参数，如：key=val
 - ``hash``散列、哈希，如：#hash
 - ``fragment``散列、哈希，不包含#符号
+
+
+注意
+---
+此函数暂不支持``mailto:``、``tel:``、``sms:``这种格式的网址，``mailto``会被解析成username。
