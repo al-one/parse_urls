@@ -30,6 +30,8 @@ parse_urls
 数组中可能存在的元素有：
 - ``protocol``协议，如：http:
 - ``scheme``协议，如：http
+- ``slashes``双斜线，如：//
+- ``authority``
 - ``username``
 - ``user``
 - ``password``
@@ -45,6 +47,8 @@ parse_urls
 - ``fragment``散列、哈希，不包含#符号
 
 
-注意
+更新
 ---
-此函数暂不支持``mailto:``、``tel:``、``sms:``这种格式的网址，``mailto``会被解析成username。
+v0.1.20150608
+- 增加支持``mailto:``、``tel:``、``sms:``等没有双斜线(//)的网址
+- 增加返回authority元素
