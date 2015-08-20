@@ -50,6 +50,9 @@ parse_urls
 
 更新
 ---
+**v0.1.20150820**
+- 增加支持解析IPv6网址，如：http://[::1]/index.htm
+
 **v0.1.20150609**
 - 增加JavaScript版本
 - 增加返回href元素
